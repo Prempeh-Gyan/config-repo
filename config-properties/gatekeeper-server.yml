@@ -7,7 +7,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defalultZone: ${EUREKA_URI:http://localhost:8889/eureka}
+      defaultZone: ${EUREKA_URI:http://localhost:8889/eureka}
 spring:
   application:
     name: gatekeeper-server
