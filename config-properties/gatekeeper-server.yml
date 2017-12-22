@@ -8,14 +8,12 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: ${EUREKA_URI:http://localhost:8889/eureka}
-
 security:
   basic:
     enabled: false
-
 spring:
   application:
-    name: gatekeeper-server  
+    name: gatekeeper-server
   oauth2:
     resource:
       userInfoUri: http://localhost:9005/auth-server/user
@@ -35,8 +33,8 @@ spring:
           defaultBrokerPort: 9092
           zkNodes: localhost
           defaultZkPort: 2181
-   
 zuul:
+  sensitive-headers: Cookie,Set-Cookie
   ignored-services: '*'
   prefix: /api
   routes:
