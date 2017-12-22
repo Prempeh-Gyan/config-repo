@@ -8,6 +8,8 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: ${EUREKA_URI:http://localhost:8889/eureka}
+signing:
+  key: SomeRandomString
 security:
   basic:
     enabled: false
