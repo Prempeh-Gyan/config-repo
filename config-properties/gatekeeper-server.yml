@@ -13,12 +13,17 @@ signing:
 security:
   basic:
     enabled: false
+  oauth2:
+    client:
+      client-id: fooClientIdPassword
+      client-secret: secret
+      access-token-uri: http://localhost:9005/auth-server/oauth/token
+      user-authorization-uri: http://localhost:9005/auth-server/oauth/authorize
+    resource:
+      user-info-uri: http://localhost:9005/auth-server/user
 spring:
   application:
     name: gatekeeper-server
-  oauth2:
-    resource:
-      userInfoUri: http://localhost:9005/auth-server/user
   cloud:
     config:
       enabled: true
