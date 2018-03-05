@@ -15,8 +15,8 @@ security:
     enabled: false
   oauth2:
     client:
-      client-id: fooClientIdPassword
-      client-secret: secret
+      client-id: TestClientTwo
+      client-secret: TestSecretTwo
       access-token-uri: http://localhost:9005/auth-server/oauth/token
       user-authorization-uri: http://localhost:9005/auth-server/oauth/authorize
     resource:
